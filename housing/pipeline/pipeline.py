@@ -7,6 +7,10 @@ from housing.entity.config_entity import DataIngestionConfig
 from housing.component.data_ingestion import DataIngestion
 import os,sys
 
+
+
+
+
 class Pipeline:
 
     def __init__(self,config: Configuartion = Configuartion()) -> None:
