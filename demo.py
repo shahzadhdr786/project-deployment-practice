@@ -1,13 +1,15 @@
 from housing.pipeline.pipeline import Pipeline
 from housing.exception import HousingException
 from housing.logger import logging
+from housing.config.configuration import Configuartion
 
 import os
 def main():
     try:
         pipeline = Pipeline()
         pipeline.run_pipeline()
-
+        #data_validation_config = Configuartion().get_data_validation_config()
+        #print(data_validation_config)
         #logging.info("main function execution completed.")
         # # data_validation_config = Configuartion().get_data_transformation_config()
         # # print(data_validation_config)
